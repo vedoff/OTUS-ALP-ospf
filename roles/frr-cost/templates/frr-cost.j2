@@ -56,3 +56,9 @@ neighbor {{ neighbor2 }}
 ! === Указываем адрес log-файла ===
 log file /var/log/frr/frr.log
 default-information originate always
+
+{% if ansible_hostname == 'Router1' %}
+ip ospf cost 1000
+{% else %}
+!ip ospf cost 45
+{% endif %}
