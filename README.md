@@ -24,9 +24,6 @@
 `net.ipv4.conf.all.rp_filter=0` \
 Заходим на `Router1` и `Router2` изменяем: 
  - `net.ipv4.conf.all.rp_filter=0` на `net.ipv4.conf.all.rp_filter=1`
-
-![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2019-50-52.png)
-
  -  Изменяем вес интерфейса на ройутерах: \
     `Router1 / Router2:`
      - `vtysh`
@@ -35,8 +32,15 @@
      - `ip ospf cost 1000`
      - `sh ip route ospf`
   
-  ![]()
+  ## Было:
+  ![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2019-56-48.png)
   
-  ![]()
+  ## Стало:
+  ![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2019-57-49.png)
+  
+  ## Трассировка при включеных параметрах
+  ![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2019-50-52.png)
+  
+  ![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2019-52-11.png)
   
   
