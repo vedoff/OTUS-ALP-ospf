@@ -11,4 +11,6 @@
 
 Получим следующее после развертывания:
 
-![]()
+![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2011-57-57.png)
+
+![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2012-02-23.png)
