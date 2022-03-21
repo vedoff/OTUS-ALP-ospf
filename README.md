@@ -18,7 +18,7 @@
 
 ![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2012-02-23.png)
 
-## Асиметричный роутинг
+## Ассиметричный роутинг
 Так как при развертывнии было сразу прописана на все роутеры проверка маршрута источника\
 `/etc/sysctl.conf` \
 `net.ipv4.conf.all.rp_filter=0` 
@@ -28,10 +28,8 @@
 - `net.ipv4.conf.all.rp_filter=1` - строгая проверка маршрута источника (интерфейс не будет пропускать обратный ответ от интерфейса из другой сети)
 - `net.ipv4.conf.all.rp_filter=2` - не строгая проверка маршрута источника 
 
-Заходим на `Router1` и изменяем: 
- - `net.ipv4.conf.all.rp_filter=0` на `net.ipv4.conf.all.rp_filter=1`
  -  Изменяем вес интерфейса на ройутере: \
-    `Router1:`
+    `Router2:`
      - `vtysh`
      - `con t`
      - `int eth3`
