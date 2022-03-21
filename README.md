@@ -18,6 +18,20 @@
 
 ![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2012-02-23.png)
 
+## Асиметричный роутинг
+Так как при развертывнии было сразу прописана на все роутеры\
+`/etc/sysctl.conf` \
+`net.ipv4.conf.all.rp_filter=0` \
+Заходим на `Router1` и изменяем: 
+ - `net.ipv4.conf.all.rp_filter=0` на `net.ipv4.conf.all.rp_filter=1`
+ -  Изменяем вес интерфейса на ройутере: \
+    `Router1:`
+     - `vtysh`
+     - `con t`
+     - `int eth3`
+     - `ip ospf cost 1000`
+     - `sh ip route ospf`
+
 ## Симетричный роутинг
 Так как при развертывнии было сразу прописана на все роутеры\
 `/etc/sysctl.conf` \
