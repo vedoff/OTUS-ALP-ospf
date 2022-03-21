@@ -36,8 +36,22 @@
      - `ip ospf cost 1000`
      - `sh ip route ospf`
 
-![]()
+### Проверяем
+Запускаем пинг `Router1 -> Router2`\
+`ping I 192.168.10.1 192.168.20.1
 
+Видим, что маршрут до сети 192.168.20.0/30 теперь пойдёт через router2, но обратный трафик от router2 пойдёт по другому пути. \
+Видим что eth2 порт только получает ICMP-трафик с адреса 192.168.10.1 \
+Видим что eth3 порт только отправляет ICMP-трафик на адрес 192.168.10.1
+
+
+![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-21%2014-38-14.png)
+
+![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-21%2015-01-38.png)
+
+![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-21%2015-02-24.png)
+
+![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-21%2015-30-24.png)
 
 ## Симетричный роутинг
 Так как при развертывнии было сразу прописана на все роутеры проверка маршрута источника\
