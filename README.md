@@ -18,7 +18,7 @@
 
 ![](https://github.com/vedoff/ospf/blob/main/pict/Screenshot%20from%202022-03-19%2012-02-23.png)
 
-## Ссиметричный роутинг
+## Симетричный роутинг
 Так как при развертывнии было сразу прописана на все роутеры\
 `/etc/sysctl.conf` \
 `net.ipv4.conf.all.rp_filter=0` \
